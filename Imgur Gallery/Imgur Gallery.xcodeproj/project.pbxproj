@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1715EF3F2B50656200CE82A8 /* UtilityManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715EF3E2B50656200CE82A8 /* UtilityManger.swift */; };
+		1715EF492B506DE500CE82A8 /* Imgur_GalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715EF482B506DE500CE82A8 /* Imgur_GalleryTests.swift */; };
+		171EA2062B4983E0001C8985 /* Imgur_GalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171EA2052B4983E0001C8985 /* Imgur_GalleryApp.swift */; };
+		171EA20A2B4983E2001C8985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171EA2092B4983E2001C8985 /* Assets.xcassets */; };
+		171EA20D2B4983E2001C8985 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171EA20C2B4983E2001C8985 /* Preview Assets.xcassets */; };
+		171EA2152B4985C5001C8985 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171EA2142B4985C5001C8985 /* ApiClient.swift */; };
+		171EA2182B49860B001C8985 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 171EA2172B49860B001C8985 /* Alamofire */; };
+		171EA21B2B49869D001C8985 /* ImgurImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171EA21A2B49869D001C8985 /* ImgurImage.swift */; };
+		171EA2202B4988D1001C8985 /* ImageDiaplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171EA21F2B4988D1001C8985 /* ImageDiaplayView.swift */; };
+		171EA2232B498B98001C8985 /* Image+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171EA2222B498B98001C8985 /* Image+Extentions.swift */; };
+		1761A61D2B4EBD6700C000EE /* ImageNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1761A61C2B4EBD6700C000EE /* ImageNavigation.swift */; };
+		1761A61F2B4EBD8300C000EE /* ImageViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1761A61E2B4EBD8300C000EE /* ImageViewFactory.swift */; };
+		1761A6212B4EBD9E00C000EE /* ImageFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1761A6202B4EBD9E00C000EE /* ImageFlow.swift */; };
+		17ABA4D02B4D141600F4B72C /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ABA4CF2B4D141600F4B72C /* ListView.swift */; };
+		17ABA4D22B4D142800F4B72C /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ABA4D12B4D142800F4B72C /* GridView.swift */; };
+		17ABA4D62B4DBC7800F4B72C /* DetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ABA4D52B4DBC7800F4B72C /* DetailedView.swift */; };
+		17C112642B50093E00E03636 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C112632B50093E00E03636 /* LaunchScreen.swift */; };
+		17DC25762B4AF25B009792B2 /* ImageDiaplayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC25752B4AF25B009792B2 /* ImageDiaplayViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1715EF4A2B506DE500CE82A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 171EA1FA2B4983E0001C8985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 171EA2012B4983E0001C8985;
+			remoteInfo = "Imgur Gallery";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1715EF3E2B50656200CE82A8 /* UtilityManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityManger.swift; sourceTree = "<group>"; };
+		1715EF462B506DE500CE82A8 /* Imgur GalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Imgur GalleryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1715EF482B506DE500CE82A8 /* Imgur_GalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imgur_GalleryTests.swift; sourceTree = "<group>"; };
+		171EA2022B4983E0001C8985 /* Imgur Gallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imgur Gallery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		171EA2052B4983E0001C8985 /* Imgur_GalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imgur_GalleryApp.swift; sourceTree = "<group>"; };
+		171EA2092B4983E2001C8985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		171EA20C2B4983E2001C8985 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		171EA2142B4985C5001C8985 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		171EA21A2B49869D001C8985 /* ImgurImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImgurImage.swift; sourceTree = "<group>"; };
+		171EA21F2B4988D1001C8985 /* ImageDiaplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDiaplayView.swift; sourceTree = "<group>"; };
+		171EA2222B498B98001C8985 /* Image+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extentions.swift"; sourceTree = "<group>"; };
+		1761A61C2B4EBD6700C000EE /* ImageNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNavigation.swift; sourceTree = "<group>"; };
+		1761A61E2B4EBD8300C000EE /* ImageViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewFactory.swift; sourceTree = "<group>"; };
+		1761A6202B4EBD9E00C000EE /* ImageFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFlow.swift; sourceTree = "<group>"; };
+		17ABA4CF2B4D141600F4B72C /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		17ABA4D12B4D142800F4B72C /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		17ABA4D52B4DBC7800F4B72C /* DetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedView.swift; sourceTree = "<group>"; };
+		17C112632B50093E00E03636 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		17DC25752B4AF25B009792B2 /* ImageDiaplayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDiaplayViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1715EF432B506DE500CE82A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171EA1FF2B4983E0001C8985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171EA2182B49860B001C8985 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1715EF3D2B50653700CE82A8 /* Uitilty */ = {
+			isa = PBXGroup;
+			children = (
+				1715EF3E2B50656200CE82A8 /* UtilityManger.swift */,
+			);
+			path = Uitilty;
+			sourceTree = "<group>";
+		};
+		1715EF402B50675A00CE82A8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				17DC25752B4AF25B009792B2 /* ImageDiaplayViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1715EF412B50676F00CE82A8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				17C112632B50093E00E03636 /* LaunchScreen.swift */,
+				171EA21F2B4988D1001C8985 /* ImageDiaplayView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1715EF472B506DE500CE82A8 /* Imgur GalleryTests */ = {
+			isa = PBXGroup;
+			children = (
+				1715EF482B506DE500CE82A8 /* Imgur_GalleryTests.swift */,
+			);
+			path = "Imgur GalleryTests";
+			sourceTree = "<group>";
+		};
+		171EA1F92B4983E0001C8985 = {
+			isa = PBXGroup;
+			children = (
+				171EA2042B4983E0001C8985 /* Imgur Gallery */,
+				1715EF472B506DE500CE82A8 /* Imgur GalleryTests */,
+				171EA2032B4983E0001C8985 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		171EA2032B4983E0001C8985 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				171EA2022B4983E0001C8985 /* Imgur Gallery.app */,
+				1715EF462B506DE500CE82A8 /* Imgur GalleryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		171EA2042B4983E0001C8985 /* Imgur Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				171EA2052B4983E0001C8985 /* Imgur_GalleryApp.swift */,
+				171EA2192B498637001C8985 /* Model */,
+				171EA21E2B49886E001C8985 /* View */,
+				1715EF402B50675A00CE82A8 /* ViewModel */,
+				171EA2132B49844B001C8985 /* Networking */,
+				1715EF3D2B50653700CE82A8 /* Uitilty */,
+				171EA2212B498B7F001C8985 /* Extentions */,
+				1761A61B2B4EBD3300C000EE /* Navigation */,
+				171EA2092B4983E2001C8985 /* Assets.xcassets */,
+				171EA20B2B4983E2001C8985 /* Preview Content */,
+			);
+			path = "Imgur Gallery";
+			sourceTree = "<group>";
+		};
+		171EA20B2B4983E2001C8985 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				171EA20C2B4983E2001C8985 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		171EA2132B49844B001C8985 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				171EA2142B4985C5001C8985 /* ApiClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		171EA2192B498637001C8985 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				171EA21A2B49869D001C8985 /* ImgurImage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		171EA21E2B49886E001C8985 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1715EF412B50676F00CE82A8 /* Screens */,
+				17ABA4CE2B4D137000F4B72C /* Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		171EA2212B498B7F001C8985 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				171EA2222B498B98001C8985 /* Image+Extentions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		1761A61B2B4EBD3300C000EE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				1761A61C2B4EBD6700C000EE /* ImageNavigation.swift */,
+				1761A61E2B4EBD8300C000EE /* ImageViewFactory.swift */,
+				1761A6202B4EBD9E00C000EE /* ImageFlow.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		17ABA4CE2B4D137000F4B72C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				17ABA4CF2B4D141600F4B72C /* ListView.swift */,
+				17ABA4D12B4D142800F4B72C /* GridView.swift */,
+				17ABA4D52B4DBC7800F4B72C /* DetailedView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1715EF452B506DE500CE82A8 /* Imgur GalleryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1715EF4C2B506DE500CE82A8 /* Build configuration list for PBXNativeTarget "Imgur GalleryTests" */;
+			buildPhases = (
+				1715EF422B506DE500CE82A8 /* Sources */,
+				1715EF432B506DE500CE82A8 /* Frameworks */,
+				1715EF442B506DE500CE82A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1715EF4B2B506DE500CE82A8 /* PBXTargetDependency */,
+			);
+			name = "Imgur GalleryTests";
+			productName = "Imgur GalleryTests";
+			productReference = 1715EF462B506DE500CE82A8 /* Imgur GalleryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		171EA2012B4983E0001C8985 /* Imgur Gallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 171EA2102B4983E2001C8985 /* Build configuration list for PBXNativeTarget "Imgur Gallery" */;
+			buildPhases = (
+				171EA1FE2B4983E0001C8985 /* Sources */,
+				171EA1FF2B4983E0001C8985 /* Frameworks */,
+				171EA2002B4983E0001C8985 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Imgur Gallery";
+			packageProductDependencies = (
+				171EA2172B49860B001C8985 /* Alamofire */,
+			);
+			productName = "Imgur Gallery";
+			productReference = 171EA2022B4983E0001C8985 /* Imgur Gallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		171EA1FA2B4983E0001C8985 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					1715EF452B506DE500CE82A8 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 171EA2012B4983E0001C8985;
+					};
+					171EA2012B4983E0001C8985 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 171EA1FD2B4983E0001C8985 /* Build configuration list for PBXProject "Imgur Gallery" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 171EA1F92B4983E0001C8985;
+			packageReferences = (
+				171EA2162B49860B001C8985 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 171EA2032B4983E0001C8985 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				171EA2012B4983E0001C8985 /* Imgur Gallery */,
+				1715EF452B506DE500CE82A8 /* Imgur GalleryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1715EF442B506DE500CE82A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171EA2002B4983E0001C8985 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				171EA20D2B4983E2001C8985 /* Preview Assets.xcassets in Resources */,
+				171EA20A2B4983E2001C8985 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1715EF422B506DE500CE82A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1715EF492B506DE500CE82A8 /* Imgur_GalleryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		171EA1FE2B4983E0001C8985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C112642B50093E00E03636 /* LaunchScreen.swift in Sources */,
+				17ABA4D02B4D141600F4B72C /* ListView.swift in Sources */,
+				171EA2202B4988D1001C8985 /* ImageDiaplayView.swift in Sources */,
+				17ABA4D62B4DBC7800F4B72C /* DetailedView.swift in Sources */,
+				17DC25762B4AF25B009792B2 /* ImageDiaplayViewModel.swift in Sources */,
+				1761A6212B4EBD9E00C000EE /* ImageFlow.swift in Sources */,
+				1761A61D2B4EBD6700C000EE /* ImageNavigation.swift in Sources */,
+				1715EF3F2B50656200CE82A8 /* UtilityManger.swift in Sources */,
+				17ABA4D22B4D142800F4B72C /* GridView.swift in Sources */,
+				1761A61F2B4EBD8300C000EE /* ImageViewFactory.swift in Sources */,
+				171EA21B2B49869D001C8985 /* ImgurImage.swift in Sources */,
+				171EA2062B4983E0001C8985 /* Imgur_GalleryApp.swift in Sources */,
+				171EA2232B498B98001C8985 /* Image+Extentions.swift in Sources */,
+				171EA2152B4985C5001C8985 /* ApiClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1715EF4B2B506DE500CE82A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 171EA2012B4983E0001C8985 /* Imgur Gallery */;
+			targetProxy = 1715EF4A2B506DE500CE82A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1715EF4D2B506DE500CE82A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5F5A54PD5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.imagelib.test.Imgur-GalleryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Imgur Gallery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Imgur Gallery";
+			};
+			name = Debug;
+		};
+		1715EF4E2B506DE500CE82A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D5F5A54PD5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.imagelib.test.Imgur-GalleryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Imgur Gallery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Imgur Gallery";
+			};
+			name = Release;
+		};
+		171EA20E2B4983E2001C8985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		171EA20F2B4983E2001C8985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		171EA2112B4983E2001C8985 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Imgur Gallery/Preview Content\"";
+				DEVELOPMENT_TEAM = D5F5A54PD5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maps.gro.Restart512;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		171EA2122B4983E2001C8985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Imgur Gallery/Preview Content\"";
+				DEVELOPMENT_TEAM = D5F5A54PD5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maps.gro.Restart512;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1715EF4C2B506DE500CE82A8 /* Build configuration list for PBXNativeTarget "Imgur GalleryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1715EF4D2B506DE500CE82A8 /* Debug */,
+				1715EF4E2B506DE500CE82A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		171EA1FD2B4983E0001C8985 /* Build configuration list for PBXProject "Imgur Gallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171EA20E2B4983E2001C8985 /* Debug */,
+				171EA20F2B4983E2001C8985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		171EA2102B4983E2001C8985 /* Build configuration list for PBXNativeTarget "Imgur Gallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				171EA2112B4983E2001C8985 /* Debug */,
+				171EA2122B4983E2001C8985 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		171EA2162B49860B001C8985 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		171EA2172B49860B001C8985 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 171EA2162B49860B001C8985 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 171EA1FA2B4983E0001C8985 /* Project object */;
+}
