@@ -1,5 +1,11 @@
 ImgurGallery 
 
+<img src="./Screenshots/LaunchScreen.PNG" alt="Screenshot 1" width="200"/> <img src="./Screenshots/ListLayout.PNG" alt="Screenshot 1" width="200"/> <img src="./Screenshots/GridLayout.PNG" alt="Screenshot 1" width="200"/> <img src="./Screenshots/DetailedView.PNG" alt="Screenshot 1" width="200"/>
+
+
+
+
+
 This is app contains image gallery wchich fetchs top week images from Imagur.
 
 Steps to run
